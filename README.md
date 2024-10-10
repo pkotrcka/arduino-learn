@@ -13,3 +13,5 @@ avr-objcopy -O ihex -R .eeprom delay delay.hex
 avrdude -F -V -c arduino -p ATMEGA328P -P /dev/ttyACM0 -b 115200 -U flash:w:delay.hex
 
 -------
+
+*.go files: require tinygo: https://github.com/tinygo-org/tinygo
